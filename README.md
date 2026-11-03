@@ -50,3 +50,12 @@ No se deben subir credenciales, tokens, claves ni datos personales. El archivo `
 
 ## Verificación
 El servicio se considera disponible cuando el contenedor aparece activo con `docker compose ps` y la página se visualiza desde `http://localhost:8080`.
+
+## Verificación del servicio
+
+Para comprobar que la aplicación funciona correctamente:
+
+- Ejecutar `docker compose ps` para revisar el estado del contenedor.
+- Ejecutar `docker compose logs` para revisar los registros.
+- Abrir http://localhost:8080 en el navegador para verificar la página.
+- Ejecutar `docker compose down` para detener el servicio.
