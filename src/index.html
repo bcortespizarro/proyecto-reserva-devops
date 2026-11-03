@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserva de horas médicas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="encabezado">
+    <div class="contenedor">
+      <p class="marca">Centro Médico Vida Sana</p>
+      <h1>Reserva de horas médicas</h1>
+      <p>Agenda una atención de manera simple y revisa la información del servicio.</p>
+    </div>
+  </header>
+
+  <main class="contenedor contenido">
+    <section class="tarjeta">
+      <h2>Formulario de reserva</h2>
+      <p class="aviso">Esta página es una simulación académica. No envía ni almacena información.</p>
+      <form>
+        <label for="nombre">Nombre completo</label>
+        <input id="nombre" name="nombre" type="text" placeholder="Ejemplo: María Pérez" autocomplete="off">
+
+        <label for="especialidad">Especialidad</label>
+        <select id="especialidad" name="especialidad">
+          <option value="">Seleccione una especialidad</option>
+          <option>Medicina general</option>
+          <option>Pediatría</option>
+          <option>Odontología</option>
+          <option>Traumatología</option>
+        </select>
+
+        <label for="fecha">Fecha preferida</label>
+        <input id="fecha" name="fecha" type="date">
+
+        <label for="hora">Horario preferido</label>
+        <select id="hora" name="hora">
+          <option value="">Seleccione un horario</option>
+          <option>09:00 a 10:00</option>
+          <option>10:00 a 11:00</option>
+          <option>11:00 a 12:00</option>
+          <option>15:00 a 16:00</option>
+        </select>
+
+        <button type="button">Simular reserva</button>
+      </form>
+    </section>
+
+    <aside class="tarjeta informacion">
+      <h2>Información de atención</h2>
+      <p><strong>Atención:</strong> lunes a viernes</p>
+      <p><strong>Horario:</strong> 09:00 a 17:00 horas</p>
+      <p><strong>Dirección:</strong> Información referencial para esta actividad</p>
+      <div class="estado"><span class="punto"></span> Servicio web disponible</div>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Proyecto académico DevOps · Servicio demostrativo</p>
+  </footer>
+</body>
+</html>

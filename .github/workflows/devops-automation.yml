@@ -1,0 +1,22 @@
+name: Validacion basica del proyecto
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+      - name: Revisar archivos obligatorios
+        run: |
+          test -f src/index.html
+          test -f src/styles.css
+          test -f Dockerfile
+          test -f docker-compose.yml
+          test -f README.md
+          echo "Estructura basica validada"
